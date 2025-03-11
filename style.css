@@ -1,0 +1,827 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@font-face {
+  font-family: 'NeueMontreal-Light'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-Light.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-LightItalic'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-LightItalic.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-Regular.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Medium'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-Medium.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-MediumItalic'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-MediumItalic.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NeueMontreal-Bold'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-Bold.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-BoldItalic'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-BoldItalic.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Italic'; /* Replace with the name you want */
+  src: url('./fonts/NeueMontreal-Italic.otf') format('woff2'); /* Update the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+	box-sizing:border-box;
+}
+
+
+body { 
+  height: 100%; 
+}
+
+/* Start:master-section */
+
+.master-section {
+  display: absolute;
+  flex-direction: column;
+  align-items: center;              
+  justify-content: center;         
+  height: 100vh;
+  width: 100%;
+  background-color: #191919;
+  position: relative;
+  overflow: hidden; 
+}
+
+/* stars */
+
+.planet-earth {
+  position: absolute;
+  overflow: visible;
+  top: 160%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  width: 45%;
+  height: auto;
+}
+
+.planet-jupiter {
+  position: absolute;
+  top: 145%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 85%;
+  height: auto;
+}
+
+.planet-saturn {
+  position: absolute;
+  top: 158%; 
+  left: 77%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 105%;
+  height: auto;
+}
+
+.planet-uranus {
+  position: absolute;
+  top: 150%; 
+  left: 63%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 75%;
+  height: auto;
+}
+
+.planet-neptune {
+  position: absolute;
+  top: 150%; 
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 90%;
+  height: auto;
+}
+
+.heliopause {
+  position: absolute;
+  top: 50%; 
+  left: 8%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+ width: 90%;
+  height: auto;
+}
+
+.golden-record {
+  position: absolute;
+  right: -40%;
+  top:10%;
+  z-index: 0;
+  width: 550px;
+  height: auto;
+}
+
+.golden-record-1 {
+  position: absolute;
+  left: -40%;
+  top:10%;
+  z-index: 0;
+  width: 550px;
+  height: auto;
+}
+
+.heliopause-line {
+  position: absolute;
+  top: 50%; 
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: auto;
+}
+
+.voyager {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top:95%; 
+  left: 49%; 
+  transform: translate(-50%, -50%);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  z-index: 1; 
+}
+
+/* text-container */
+
+.hero-container {
+  position: absolute;
+  top: 35%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  z-index: 1; 
+}
+
+
+.inline-text {
+  display: inline-block;
+}
+
+.svg-container {
+  position: absolute; 
+  display: flex;
+  top: 64%;
+  left: 52%; 
+  transform: translate(-50%, -50%);
+}
+
+.number-1-container{
+  position: absolute; 
+  top: 20%;
+  left: 78%; 
+  z-index: 0;
+  text-align: left;
+  opacity: 0;
+}
+
+.number-2-container{
+  position: absolute; 
+  top: 25%;
+  left: 78%; 
+  z-index: 0;
+  text-align: left;
+  opacity: 0;
+}
+
+.number-3-container{
+  position: absolute; 
+  top: 23%;
+  left: 78%; 
+  z-index: 0;
+  text-align: left;
+  opacity: 0;
+}
+
+.number-4-container{
+  position: absolute; 
+  top: 22%;
+  left: 78%;  
+  z-index: 0;
+  text-align: left;
+  opacity: 0;
+}
+
+.number-5-container{
+  position: absolute; 
+  top: 25%;
+  left: 78%; 
+  z-index: 0;
+  text-align: left;
+  opacity: 0;
+}
+
+.voyager-container {
+  position: absolute; 
+  top: 90%;
+  left: 2%; 
+  z-index: 0;
+  text-align: left;
+  z-index: 2;
+  opacity: 0;
+}
+
+
+.earth-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 105%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1; 
+}
+
+.jupiter-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1; 
+  
+}
+
+.saturn-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.uranus-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.neptune-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.installer-space-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.golden-record-text-container {
+  display: flex; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.golden-record-tagline-container {
+  display: flex; 
+  position: absolute; 
+  top: 70%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+
+.scroll-container {
+  display: flex; 
+  position: absolute; 
+  flex-direction: column;
+  transform: translate(-50%, -50%); 
+  justify-content: center; 
+  align-items: center; 
+  top: 92%; 
+  left: 49%; 
+}
+
+
+/* texts */
+
+.circle {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.voyager1 {
+  background-color: #FFB04B; 
+}
+
+.voyager2 {
+  background-color: #E45D31;
+}
+
+.voyagers-span {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 400;
+  color: #989898 !important; 
+  font-size: 0.75rem;
+}
+
+.scroll-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'NeueMontreal-Bold', sans-serif;
+  font-weight: 700;
+  color: #D5D5D5;
+  font-size: 6.5rem;
+  line-height: 6rem;
+  width: 890px;
+  z-index: 1;
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+.number-title {
+  font-family: 'NeueMontreal-Bold', sans-serif;
+  font-size: 20rem;
+  font-weight: 500;
+  color: #989898 !important; 
+}
+
+.earth-text  {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-top: 12px;
+  width: 760px;
+  text-align: center;
+  z-index: 2; 
+}
+
+.jupiter-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 600px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.saturn-text{
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 600px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.saturn-text-1{
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 800px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.saturn-text-2{
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 750px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.saturn-text-3 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 800px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.saturn-text-4 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 650px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.uranus-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.neptune-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 600px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.neptune-text-1 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.installer-space-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 650px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.installer-space-text-1 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.installer-space-text-2 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.installer-space-text-3 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 1100px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text-1 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 700px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text-2 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 1100px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text-3 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 850px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text-4 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 750px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.golden-record-text-5 {
+  font-family: 'IBM Plex Mono', serif;
+  font-weight: 400;
+  color: #B2B2B2 !important; 
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 800px;
+  text-align: center;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+#recordTagline  {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 400;
+  color: #EAB13F !important; 
+  font-size: 14px;
+  text-align: center;
+  opacity: 0; 
+}
+
+/* partical-js */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.count-particles {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  z-index: 2; 
+}
+
+/* End:partical-js */
+
+
+.front-path-1{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000; 
+  visibility: hidden;
+}
+
+.back-path-1{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.front-path-2{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.back-path-2{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+
+.front-path-3{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.back-path-3{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden; 
+}
+
+.front-path-4{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.back-path-4{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.front-path-5{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.back-path-5{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.front-path-6{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+.back-path-6{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: hidden;
+}
+
+
+.front-path-7{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: visible;
+}
+
+.back-path-7{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: visible;
+}
+
+.back-path-8{
+  stroke-dasharray: 1000;   
+  stroke-dashoffset: 1000;  
+  visibility: visible;
+}
+
+.path{
+  stroke-dasharray: 800;   
+  stroke-dashoffset: 800;  
+  visibility: hidden;
+}
+
+/* End:master-section */
+
+
+/* footer */
+
+.footer {
+  position: fixed;
+  top: 3%; 
+  left:2%;
+  z-index: 2;
+}
+
+.footer-subtitle {
+  position: fixed;
+  top: 3%; 
+  left: 6.5%;
+  font-family: 'NeueMontreal-regular', sans-serif;
+  font-weight: 500;
+  color: #D5D5D5;
+  font-size: 1rem;
+}
+
+.footer svg {
+  width: 60px; /* Adjust the size */
+  height: auto;
+}
+
+.back-to-top {
+  background: transparent;  
+  border: none;
+  cursor: pointer;
+}

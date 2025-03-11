@@ -1,0 +1,438 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Voyager to the Space Installer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="javascript.js" defer></script>
+</head>
+<body>
+
+
+<!-- Master-section -->
+    <section class="master-section">
+      
+      <div id="particles-js"></div>
+      <div class="count-particles">
+        <span class="js-count-particles">
+      </div>
+    
+      
+      <section id="hero-section">
+        
+        <div class="voyager-container">
+          <div class="voyager">
+            <div class="circle voyager1"></div>
+            <span class="voyagers-span" >Voyager 1</span>
+          </div>
+          <div class="voyager">
+            <div class="circle voyager2"></div>
+            <span class="voyagers-span" >Voyager 2</span>
+          </div>
+        </div>
+    
+        <div class="scroll-container">
+          <p class="scroll-text">scroll down</p>
+          <div class="arrow-down"></div>
+        </div>
+    
+        <svg class="arrow" width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L8.81463 8.35495C9.19968 8.71735 9.80031 8.71735 10.1854 8.35495L18 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+          
+    
+        <div class="hero-container">
+          <h1 class="hero-title">
+            The voyager to <br>
+            <span class="inline-text">the space installer</span>
+          </h1>
+          </div>
+    
+          <div class="svg-container">
+    
+            <svg width="180" height="180" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31.5" cy="31.5" r="30.75" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <path d="M54.0628 31.5C54.0628 40.0532 51.4807 47.7674 47.3424 53.326C43.204 58.8846 37.5458 62.25 31.3612 62.25C25.1766 62.25 19.5184 58.8846 15.3801 53.326C11.2417 47.7674 8.65967 40.0532 8.65967 31.5C8.65967 22.9468 11.2417 15.2326 15.3801 9.67401C19.5184 4.11542 25.1766 0.75 31.3612 0.75C37.5458 0.75 43.204 4.11542 47.3424 9.67401C51.4807 15.2326 54.0628 22.9468 54.0628 31.5Z" fill="#010101" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <path d="M42.9612 31.5C42.9612 40.129 41.5885 47.907 39.3956 53.5001C38.2983 56.299 37.0102 58.513 35.6182 60.0147C34.227 61.5155 32.7878 62.25 31.361 62.25C29.9342 62.25 28.4949 61.5155 27.1037 60.0147C25.7117 58.513 24.4236 56.299 23.3263 53.5001C21.1334 47.907 19.7607 40.129 19.7607 31.5C19.7607 22.871 21.1334 15.093 23.3263 9.4999C24.4236 6.70104 25.7117 4.48698 27.1037 2.98529C28.4949 1.48452 29.9342 0.75 31.361 0.75C32.7878 0.75 34.227 1.48452 35.6182 2.98529C37.0102 4.48698 38.2983 6.70104 39.3956 9.4999C41.5885 15.093 42.9612 22.871 42.9612 31.5Z" fill="#010101" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <line x1="8.1875" y1="51.9108" x2="54.5355" y2="51.9108" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <line x1="1.13763e-07" y1="30.9569" x2="63" y2="30.9569" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <line x1="8.1875" y1="10.5542" x2="54.5355" y2="10.5542" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              <line y1="-0.75" x2="62.0349" y2="-0.75" transform="matrix(0.00223687 0.999998 -0.999998 0.0022076 30.8062 0.689209)" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="1.5"/>
+              </svg>
+            
+            <svg width="180" height="180" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31.9126" cy="31.5" r="31.5" fill="#191919" style="fill:#191919;fill-opacity:1;"/>
+              <mask id="mask0_297_244" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="240">
+              <circle cx="31.9126" cy="31.5" r="31.5" fill="#DB5F48" style="fill:#DB5F48;fill:color(display-p3 0.8588 0.3745 0.2824);fill-opacity:1;"/>
+              </mask>
+              <g mask="url(#mask0_297_244)">
+              <rect x="5.60547" y="58.8462" width="52.4423" height="7.96154" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="4.04736" y="51.0577" width="55.5577" height="2.94231" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="4.04736" y="9.34619" width="55.5577" height="2.94231" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="1.45117" width="61.9615" height="7.96154" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.412598" y="14.3654" width="63" height="11.7692" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.412598" y="35.1345" width="63" height="11.7692" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="-1.14502" y="28.9037" width="69.0577" height="2.76923" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              </g>
+              </svg>
+              
+            <svg width="180" height="180" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31.7378" cy="31.5" r="31" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;"/>
+              <path d="M57.5971 31.4406C57.5971 45.6995 46.0201 57.26 31.7375 57.26C17.4549 57.26 5.87793 45.6995 5.87793 31.4406C5.87793 17.1816 17.4549 5.62109 31.7375 5.62109C46.0201 5.62109 57.5971 17.1816 57.5971 31.4406Z" fill="#010101" stroke="#2C60F5" style="fill:#010101;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;"/>
+              <path d="M53.1746 31.4405C53.1746 43.4028 43.5726 53.0918 31.7382 53.0918C19.9038 53.0918 10.3018 43.4028 10.3018 31.4405C10.3018 19.4783 19.9038 9.78931 31.7382 9.78931C43.5726 9.78931 53.1746 19.4783 53.1746 31.4405Z" fill="#010101" stroke="#2C60F5" style="fill:#010101;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;"/>
+              <ellipse cx="31.8576" cy="31.2619" rx="16.6765" ry="16.6134" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              </svg>
+              
+              
+            <svg width="180" height="180" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32.3252" cy="31.5" r="31.5" fill="black" style="fill:#191919;fill-opacity:1;"/>
+              <mask id="mask0_297_263" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="160" height="160">
+              <circle cx="32.3252" cy="31.5" r="31.5" fill="#DB5F48" style="fill:#DB5F48;fill:color(display-p3 0.8588 0.3745 0.2824);fill-opacity:1;"/>
+              </mask>
+              <g mask="url(#mask0_297_263)">
+              <rect x="6.01758" y="57.4615" width="52.4423" height="1.38462" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="6.01758" y="61.6154" width="52.4423" height="1.38462" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="5.84424" y="52.6154" width="52.4423" height="2.07692" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="4.45996" y="47.769" width="55.5577" height="2.76923" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="2.03711" y="42.923" width="60.0577" height="3.46154" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.825195" y="-3.98071" width="63" height="46.2115" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              </g>
+              </svg>  
+    
+            <svg width="180" height="180" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32.1504" cy="31.5" r="31.5" fill="#191919" style="fill:#191919;fill-opacity:1;"/>
+              <mask id="mask0_297_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+              <circle cx="32.1504" cy="31.5" r="31.5" fill="#DB5F48" style="fill:#DB5F48;fill:color(display-p3 0.8588 0.3745 0.2824);fill-opacity:1;"/>
+              </mask>
+              <g mask="url(#mask0_297_275)">
+              <rect x="0.650391" width="61.4423" height="9.86539" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.650391" y="11.2499" width="61.4423" height="7.44231" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.823242" y="20.769" width="62.8269" height="6.40385" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.650391" y="29.9423" width="63" height="4.84615" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.823242" y="38.7692" width="62.1346" height="4.67308" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.823242" y="47.9424" width="61.4423" height="3.98077" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="0.823242" y="56.5962" width="61.4423" height="2.94231" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              <rect x="20.0352" y="62.3076" width="22.1538" height="2.94231" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+              </g>
+              </svg>
+        </div>
+      </section>
+    
+      <section id="earth-section">
+    
+        <div class="number-1-container">
+          <span class="number-title">1</span>
+        </div>
+        
+        <svg class="planet-earth" width="800" height="600" viewBox="0 0 575 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="back-path-8" d="M439.572 112.5C316.262 72.9998 -67.1447 112.5 14.2295 141.5" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+          <path class="back-path-7" d="M305.279 86.6955C238.016 33.555 -91.3809 88.0001 69.4695 106" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        
+          <path id="earth-color" d="M483 228.5C483 353.063 382.846 454 259.35 454C135.855 454 35.7007 353.063 35.7007 228.5C35.7007 103.937 135.855 3 259.35 3C382.846 3 483 103.937 483 228.5Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <path id="earth-color" d="M424.091 228.5C424.091 291.023 405.372 347.508 375.255 388.292C345.137 429.076 303.772 454 258.352 454C212.932 454 171.567 429.076 141.449 388.292C111.331 347.508 92.6128 291.023 92.6128 228.5C92.6128 165.977 111.331 109.492 141.449 68.7082C171.567 27.9236 212.932 3 258.352 3C303.772 3 345.137 27.9236 375.255 68.7082C405.372 109.492 424.091 165.977 424.091 228.5Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <path id="earth-color" d="M344.214 228.5C344.214 291.323 334.306 348.063 318.391 388.987C310.43 409.458 301.024 425.82 290.733 437.013C280.444 448.203 269.498 454 258.352 454C247.206 454 236.26 448.203 225.971 437.013C215.68 425.82 206.274 409.458 198.313 388.987C182.397 348.063 172.489 291.323 172.489 228.5C172.489 165.677 182.397 108.937 198.313 68.0135C206.274 47.542 215.68 31.1801 225.971 19.9872C236.26 8.79683 247.206 3 258.352 3C269.498 3 280.444 8.79683 290.733 19.9872C301.024 31.1801 310.43 47.542 318.391 68.0135C334.306 108.937 344.214 165.677 344.214 228.5Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <line id="earth-color" x1="91.6094" y1="379" x2="425.094" y2="379" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <line id="earth-color" x1="32.7007" y1="227" x2="486" y2="227" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <line id="earth-color" x1="91.6094" y1="79" x2="425.094" y2="79" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+          <line id="earth-color" y1="-3" x2="450.001" y2="-3" transform="matrix(0.00221875 0.999998 -0.999998 0.00222562 254.358 5)" stroke="#2C60F5" style="stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="6"/>
+        
+          <path class="front-path-7" d="M58 104.5C88.5 109 141.737 111.087 191 92" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        
+          <text id="EarthTagline" x="500" y="420" font-size="13" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" font-weight="400" text-anchor="end">Earth</text>
+        </svg>
+        
+        <div class="earth-text-container">
+          <p class="earth-text">
+            In 1977, NASA undertook one of the most ambitious space missions in history, launching Voyager 1 and Voyager 2, two spacecraft designed to unlock the mysteries of the outer planets in our solar system.</p>
+        </div>
+        
+      </section>
+        
+    
+    
+    <section id="jupiter-section">
+    
+      <div class="number-2-container">
+        <span class="number-title">2</span>
+      </div>
+        
+      
+      <svg class="planet-jupiter" width="940" height="550" viewBox="0 0 940 550" xmlns="http://www.w3.org/2000/svg">
+        <path class="back-path-1" d="M305.279 123.696C238.016 70.555 -91.3809 125 69.4695 143" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path class="back-path-2" d="M439.572 149.5C316.262 110 -67.1447 149.5 14.2295 178.5"  stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round" fill="none"/>
+        
+      
+        <circle cx="290" cy="182" r="182" fill="#191919" />
+      
+      
+        <mask id="mask0_260_119" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="940" height="550">
+      
+          <circle cx="290" cy="182" r="182" fill="white" />
+        </mask>
+      
+      
+        <g id="jupiter-color" mask="url(#mask0_260_119)">
+          <rect x="108" y="-15" width="550" height="60" fill="#2C60F5" />
+                <rect x="123" y="54" width="550" height="17" fill="#2C60F5" />
+                <rect x="102" y="83" width="550" height="68" fill="#2C60F5" />
+                <rect x="93" y="167" width="550" height="16" fill="#2C60F5" />
+                <rect x="102" y="203" width="550" height="68" fill="#2C60F5" />
+                <rect x="123" y="295" width="550" height="17" fill="#2C60F5" />
+                <rect x="132" y="340" width="550" height="46" fill="#2C60F5" />
+        </g>
+      
+      
+        <text id="JupiterTagline" x="480" y="350" font-size="10" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" text-anchor="end">Jupiter</text>
+      
+        <path class="front-path-1" d="M58 141.5C164.5 159 444 104 488.5 40.5" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path class="front-path-2" d="M13 178C121 221.5 487 206 564 133.5" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round" fill="none"/>
+      </svg>
+      
+      
+      <div class="jupiter-text-container">
+        <p class="jupiter-text">
+          For the first time, humanity saw the towering volcanic eruptions on Jupiter’s moon Io, confirming it as the most volcanically active body in the solar system.</p>
+      </div>
+      
+    </section>
+    
+    <section id="saturn-section">
+      <div class="number-3-container">
+        <span class="number-title">3</span>
+      </div>
+      
+      <svg class="planet-saturn" width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        <path class="back-path-3" d="M294.314 154.81C238.99 96.1699 -61.7244 122.27 80.8998 153.911" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        <path class="back-path-4" d="M439.572 166.5C316.262 127 -67.1447 166.5 14.2295 195.5" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+      
+        <path id="saturn-color" d="M469.117 183.753C469.117 284.14 388.047 365.507 288.059 365.507C188.07 365.507 107 284.14 107 183.753C107 83.3666 188.07 2 288.059 2C388.047 2 469.117 83.3666 469.117 183.753Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="4" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+        <path id="saturn-color" d="M439.244 183.406C439.244 267.1 371.552 334.939 288.059 334.939C204.565 334.939 136.873 267.1 136.873 183.406C136.873 99.7123 204.565 31.8729 288.059 31.8729C371.552 31.8729 439.244 99.7123 439.244 183.406Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="4" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+        <path id="saturn-color" d="M413.54 183.406C413.54 253.692 357.335 310.624 288.059 310.624C218.783 310.624 162.578 253.692 162.578 183.406C162.578 113.12 218.783 56.1881 288.059 56.1881C357.335 56.1881 413.54 113.12 413.54 183.406Z" fill="#191919" stroke="#2C60F5" style="fill:#191919;fill:color(display-p3 0.098 0.098 0.098);fill-opacity:1;stroke:#2C60F5;stroke:color(display-p3 0.1725 0.3765 0.9608);stroke-opacity:1;" stroke-width="4"/>
+        <circle id="saturn-fill" cx="288" cy="182" r="96" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        
+        <path class="front-path-4" d="M13 195C121 238.5 492.5 173 574.5 84" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        <path class="front-path-3" d="M79 153.5C184 179 331.5 117.5 327 399" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+      
+        <text id="SaturnTagline" x="470" y="350" font-size="11" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" text-anchor="end">Saturn</text>
+      </svg>
+      
+      <div class="saturn-text-container">
+        <p class="saturn-text">
+          Saturn’s rings, once thought to be simple, were revealed to be intricately structured, composed of countless particles ranging in size from tiny grains to massive boulders.</p>
+      </div>
+      
+      <div class="saturn-text-container">
+        <p class="saturn-text-1">
+          Voyager 1, the more distant of the two, is currently over 24 billion kilometers (approximately 15 billion miles) from Earth. It travels at a speed of about 61,000 kilometers per hour (38,000 miles per hour) relative to the Sun.</p>
+      </div>
+      
+      <div class="saturn-text-container">
+      <p class="saturn-text-2">
+        Voyager 1 is far beyond the heliosphere, the bubble-like region of space dominated by the Sun’s magnetic field and solar wind, having crossed the heliopause—the boundary of interstellar space—in August 2012.</p>
+      </div>
+      
+      <div class="saturn-text-container">
+        <p class="saturn-text-3">
+          Since then, it has been providing scientists with data about the interstellar medium, including measurements of cosmic rays, magnetic fields, and particle densities, which offer a glimpse into the environment of deep space.</p>
+      </div>
+      
+      <div class="saturn-text-container">
+        <p class="saturn-text-4">
+          However, due to its great distance, it takes more than 22 hours for a signal to travel from Voyager 1 to Earth at the speed of light.</p>
+      </div>
+    
+    </section>
+    
+    <section id="uranus-section">
+    
+      <div class="number-4-container">
+        <span class="number-title">4</span>
+      </div>
+    
+      <svg class="planet-uranus" width="800" height="550" viewBox="0 0 800 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+      
+        <path class="back-path-5" d="M387 97.5001C277.127 48.163 -166.745 294.618 103.532 267.869" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="261" cy="182" r="182" fill="black" style="fill:#191919;fill-opacity:1;"/>
+        <mask id="mask0_271_63" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="79" y="0" width="364" height="364">
+        <circle cx="261" cy="182" r="182" fill="#DB5F48" style="fill:#DB5F48;fill:color(display-p3 0.8588 0.3745 0.2824);fill-opacity:1;"/>
+        </mask>
+        <g id="uranus-color" mask="url(#mask0_271_63)">
+        <rect x="109" y="356" width="303" height="8" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="109" y="332" width="303" height="8" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="108" y="304" width="303" height="12" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="100" y="276" width="321" height="16" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="86" y="248" width="347" height="20" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="79" y="-28" width="364" height="264" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        </g>
+        <path class="front-path-5" d="M96.0005 268.5C274.001 253 450.043 122.639 466.5 92.4999" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        <text id="UranusTagline" x="430" y="350" font-size="10" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" text-anchor="end">Uranus</text>
+        </svg>
+      
+      <div class="uranus-text-container">
+        <p class="uranus-text">
+          Voyager 2, the only spacecraft to ever visit Uranus and Neptune, unveiled the icy landscapes and extreme weather of these far-off planets, including Neptune’s supersonic winds and massive storms.</p>
+      </div>
+    
+    </section>
+    
+    
+    <section id="neptune-section">
+    
+    <div class="number-5-container">
+      <span class="number-title">5</span>
+    </div>
+    
+      <svg class="planet-neptune" width="950" height="550" viewBox="0 0 950 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+        <path class="back-path-6" d="M387 88.5001C277.127 39.163 -166.745 285.618 103.532 258.869" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="261" cy="182" r="182" fill="black" style="fill:#191919;fill-opacity:1;"/>
+        <mask id="mask0_272_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="79" y="0" width="950" height="550">
+        <circle cx="261" cy="182" r="182" fill="#DB5F48" style="fill:#DB5F48;fill:color(display-p3 0.8588 0.3745 0.2824);fill-opacity:1;"/>
+        </mask>
+        <g id="neptune-color" mask="url(#mask0_272_64)">
+        <rect x="5" width="410" height="56" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="79" y="65" width="355" height="43" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="80" y="120" width="363" height="37" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="79" y="173" width="364" height="28" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="80" y="224" width="359" height="27" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="80" y="277" width="355" height="23" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="80" y="327" width="355" height="17" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        <rect x="191" y="360" width="128" height="17" fill="#2C60F5" style="fill:#2C60F5;fill:color(display-p3 0.1725 0.3765 0.9608);fill-opacity:1;"/>
+        </g>
+        <path class="front-path-6" d="M96.0005 259.5C274.001 244 450.043 113.639 466.5 83.4999" stroke="#CD552E" style="stroke:#CD552E;stroke:color(display-p3 0.8039 0.3333 0.1804);stroke-opacity:1;" stroke-width="6" stroke-linecap="round"/>
+      
+        <text id="NeptuneTagline" x="450" y="350" font-size="10" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" text-anchor="end">
+          Neptune
+        </text>
+      </svg>
+      
+      <div class="neptune-text-container">
+        <p class="neptune-text">
+          These discoveries not only transformed our understanding of the outer solar system but also inspired generations of scientists and engineers.</p>
+      </div>
+      
+      <div class="neptune-text-container">
+        <p class="neptune-text-1">
+          After completing their grand tour of the planets, the spacecraft continued their mission, venturing into the uncharted territory at the edge of the solar system.</p>
+      </div>
+    
+    </section>
+    
+    <section id="haliopause-section">
+    
+      <svg class="heliopause" width="1000" height="797" viewBox="0 0 1000 797" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="outer-path" d="M428.5 -1.7419e-05C534.189 -2.20388e-05 635.549 41.9847 710.282 116.718C785.015 191.451 827 292.811 827 398.5C827 504.189 785.015 605.549 710.282 680.282C635.549 755.015 534.189 797 428.5 797L428.5 398.5L428.5 -1.7419e-05Z" fill="#0F2C96" style="fill:#0F2C96;fill:color(display-p3 0.0588 0.1725 0.5882);fill-opacity:1;"/>
+        <path id="middle-path" d="M363 48C456.091 48 545.369 84.9803 611.194 150.806C677.02 216.631 714 305.909 714 399C714 492.091 677.02 581.369 611.195 647.194C545.369 713.02 456.091 750 363 750L363 399L363 48Z" fill="#071C68" style="fill:#071C68;fill:color(display-p3 0.0275 0.1098 0.4078);fill-opacity:1;"/>
+        <path id="inner-path" d="M289 110C365.648 110 439.156 140.448 493.354 194.646C547.552 248.844 578 322.352 578 399C578 475.648 547.552 549.156 493.354 603.354C439.156 657.552 365.648 688 289 688L289 399L289 110Z" fill="#03113E" style="fill:#03113E;fill:color(display-p3 0.0118 0.0667 0.2431);fill-opacity:1;"/>
+        <text id="HeliopauseTagline" x="900" y="200" font-size="11" fill="#2C60F5" font-family="IBM Plex Mono, serif" font-style="italic" opacity="0" text-anchor="end">
+          Heliopause
+        </text>
+        </svg>
+      
+        <div class="heliopause-line">
+        <svg width="870" height="20" viewBox="0 0 870 20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="paint0_linear_268_60" x1="0%" x2="100%" gradientUnits="userSpaceOnUse" color-interpolation="sRGB">
+              <stop offset="0%" stop-color="color(display-p3 0.8588 0.3745 0.2824)" stop-opacity="0.1" />
+              <stop offset="100%" stop-color="color(display-p3 0.8588 0.3745 0.2824)" stop-opacity="1" />
+          </linearGradient>
+          </defs>
+          <path class="path" d="M10 10 L810 10"  stroke="url(#paint0_linear_268_60)" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+      </div>
+    
+      <div class="installer-space-text-container">
+        <p class="installer-space-text">
+          It crossed the heliopause in November 2018, entering interstellar space and becoming the second spacecraft to do so.</p>
+      </div>
+      
+      <div class="installer-space-text-container">
+        <p class="installer-space-text-1">
+          This data gave scientists invaluable insights into the boundary region and how the Sun’s influence interacts with the interstellar medium.</p>
+      </div>
+      
+      <div class="installer-space-text-container">
+        <p class="installer-space-text-2">
+          Unlike Voyager 1, Voyager 2’s plasma instruments were still operational during its crossing, allowing it to provide direct measurements of the transition from the heliosphere to interstellar space.</p>
+      </div>
+      
+      <div class="installer-space-text-container">
+        <p class="installer-space-text-3">
+          Voyager 2 continues to collect and transmit data about cosmic rays, magnetic fields, and plasma waves. Signals from Voyager 2 take more than 18 hours to reach Earth.</p>
+      </div>  
+    
+    </section>
+    
+    
+    <section id="golden-record-section">
+    
+      <svg class="golden-record" width="364" height="364" viewBox="0 0 364 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M363.5 182C363.5 282.24 282.24 363.5 182 363.5C81.7603 363.5 0.5 282.24 0.5 182C0.5 81.7603 81.7603 0.5 182 0.5C282.24 0.5 363.5 81.7603 363.5 182Z" fill="black" stroke="#EAB13F" style="fill:#191919;fill-opacity:1;stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;"/>
+        <circle cx="182" cy="182" r="178" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="8"/>
+        <circle cx="182" cy="182" r="154.545" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="4"/>
+        <circle cx="182" cy="182" r="134.182" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="4"/>
+        </svg>
+      
+        <svg class="golden-record-1" width="364" height="364" viewBox="0 0 364 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M363.5 182C363.5 282.24 282.24 363.5 182 363.5C81.7603 363.5 0.5 282.24 0.5 182C0.5 81.7603 81.7603 0.5 182 0.5C282.24 0.5 363.5 81.7603 363.5 182Z" fill="black" stroke="#EAB13F" style="fill:#191919;fill-opacity:1;stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;"/>
+          <circle cx="182" cy="182" r="178" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="8"/>
+          <circle cx="182" cy="182" r="154.545" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="4"/>
+          <circle cx="182" cy="182" r="134.182" stroke="#EAB13F" style="stroke:#EAB13F;stroke:color(display-p3 0.9176 0.6941 0.2471);stroke-opacity:1;" stroke-width="4"/>
+          </svg>
+      
+          <div class="golden-record-tagline-container">
+            <p id="recordTagline">The Golden records</p>
+          </div>
+      
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text">
+          Both Voyager spacecraft carry a remarkable message for the cosmos: the Golden Record. This 12-inch gold-plated copper disc is a time capsule intended to communicate the essence of Earth to any intelligent extraterrestrial life that might one day encounter it.</p>
+      </div>
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text-1">
+          Conceived by a team led by renowned astronomer Carl Sagan, the record encapsulates the sights, sounds, and emotions of our planet.</p>
+      </div>
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text-2">
+          Though the odds of the Golden Records being discovered by an extraterrestrial civilization are extraordinarily small, their purpose transcends practicality. They symbolize humanity’s boundless curiosity, our yearning to explore, and our desire to be known in the infinite expanse of space.</p>
+      </div>
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text-3">
+          As the Voyagers drift farther and farther into the cosmic abyss, billions of kilometers from home, they serve as enduring ambassadors of Earth a quiet reminder of a species that dared to dream beyond its planet.</p>
+      </div>
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text-4">
+          Accompanying these auditory treasures are 116 images depicting life on Earth: human anatomy, mathematical concepts, landscapes, and everyday scenes like a mother nursing her baby.</p>
+      </div>
+      
+      <div class="golden-record-text-container">
+        <p class="golden-record-text-5">
+          Messages of goodwill from global leaders, including U.S. President Jimmy Carter and U.N. Secretary-General Kurt Waldheim, reflect humanity’s hope for connection beyond our solar system.</p>
+      </div>
+    
+    </section>
+    
+  </section>
+    
+        <footer class="footer">
+          <p class="footer-subtitle">The voyager program</p>
+          <button id="backtotop" class="back-to-top" aria-label="Back to Top">
+            <svg width="37" height="10" viewBox="0 0 37 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6868 9.75448H24.7639C25.5225 9.75448 26.1451 9.45257 26.6508 8.84854C27.1371 8.26371 27.3901 7.5657 27.3901 6.77351C27.3901 5.16976 25.2698 4.03767 24.4524 4.03767H21.6708C21.4568 4.03767 21.2814 3.9433 21.1455 3.79254C21.0093 3.62259 20.9316 3.43404 20.9316 3.2075C20.9316 2.94338 21.0093 2.71704 21.1455 2.52829C21.3012 2.33974 21.4956 2.22657 21.7292 2.22657H26.9425V0.207542H21.6317C20.6784 0.207542 19.939 0.490659 19.4137 1.03771C18.9472 1.54717 18.7134 2.22638 18.7134 3.03775C18.7134 3.83013 18.9472 4.52833 19.4137 5.09399C19.939 5.71662 20.5617 6.03771 21.3204 6.03771H24.5303C24.7245 6.03771 24.8804 6.0943 24.9969 6.24487C25.1331 6.39583 25.1915 6.58457 25.1915 6.7923C25.1915 7.03763 25.0942 7.26397 24.9385 7.45272C24.7635 7.62247 24.5689 7.71685 24.3164 7.71685H19.1807L19.103 7.58469L17.1771 1.58495L17.0798 1.39621C16.6129 0.47167 15.8349 0.0189908 14.765 0.0189908C14.1813 0.0189908 13.6561 0.150957 13.1891 0.434074C12.7028 0.716999 12.3915 1.13208 12.2165 1.66053L9.62912 9.73549L11.983 9.75467L14.3562 2.56627C14.4145 2.33974 14.5508 2.22657 14.7258 2.22657C14.8231 2.22657 14.9008 2.26417 14.9592 2.32094C15.0175 2.39633 15.0565 2.4719 15.0758 2.56627L17.4684 9.75467L19.6868 9.75448ZM2.17881 3.15092V9.73549H0V2.43392C0 1.49058 0.233564 0.830168 0.739256 0.434074C1.12827 0.150957 1.71188 0 2.52886 0C3.19019 0 3.75443 0.188745 4.26012 0.547244C4.76581 0.905744 5.09648 1.39621 5.2717 2.00004L6.69167 6.84889L6.92524 7.5093C6.94462 7.64127 7.02254 7.73564 7.10026 7.81083C7.19757 7.8866 7.29467 7.92439 7.41155 7.8866C7.60615 7.8678 7.70345 7.75444 7.70345 7.58469V0.226532H9.94061V7.49031C9.94061 8.30168 9.7462 8.9057 9.33761 9.33959C8.9486 9.77347 8.36499 10 7.58677 10C6.90586 10 6.34163 9.86784 5.89427 9.6415C5.34962 9.37737 4.99937 8.96229 4.84373 8.41485L3.20977 2.88679L3.09309 2.52829C3.05413 2.39632 2.97641 2.30195 2.87911 2.20758C2.7818 2.13201 2.66512 2.11321 2.54844 2.13201C2.43175 2.151 2.35403 2.20758 2.27611 2.32075C2.21215 2.42311 2.17849 2.54057 2.17881 2.66026V3.15092ZM37 9.75448L34.4711 1.58495L34.3738 1.39621C33.9069 0.47167 33.1289 0.0189908 32.059 0.0189908C31.4754 0.0189908 30.9501 0.150957 30.4833 0.434074C29.9966 0.716999 29.6858 1.13208 29.5103 1.66053L26.9231 9.73549L29.277 9.75467L31.6502 2.56627C31.7085 2.33974 31.8448 2.22657 32.0198 2.22657C32.1171 2.22657 32.1948 2.26417 32.2532 2.32094C32.3119 2.39633 32.3505 2.4719 32.3703 2.56627L34.7629 9.75467L37 9.75448Z" fill="white" style="fill:#D5D5D5;fill-opacity:1;"/>
+            </svg>
+          </button>
+        </footer>
+        
+  </body>   
+</html> 
